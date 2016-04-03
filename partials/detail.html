@@ -1,0 +1,31 @@
+<div class="jumbotron text-center">
+	<h1>Detail Page</h1>
+	
+	<p>{{ message }}</p>
+	<div class="container">
+  	<form class="form-horizontal" role="form" ng-submit="edit()">
+  	<div class="form-group">
+  		<button type="submit" class="btn btn-default">Edit</button>
+  	</div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email: </label>
+      <div>{{user.email}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="firstName">First Name: </label>
+      <div>{{user.firstName}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="lastName">Last Name: </label>
+      <div>{{user.lastName}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="lastName">Full Name: </label>
+      <div>{{user.fullName()}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="company">Company: </label>
+      <div>{{user.company}}</div>
+    </div>
+  	</form> 
+</div>
