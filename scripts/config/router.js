@@ -30,6 +30,11 @@
 			.when('/detail',{
 				templateUrl : 'partials/detail.html',
 				controller : 'detailController'
+			})
+
+			.when('/userlist',{
+				templateUrl : 'partials/userlist.html',
+				controller : 'ListController'
 			});
 	});
 
